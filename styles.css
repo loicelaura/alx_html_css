@@ -1,0 +1,22 @@
+ul {
+    display: flex;
+    flex-direction: column;
+}
+ h1 {
+    color: red;
+    display: contents;
+    flex-direction: row;
+    font-style: italic;
+    flex: 2px;
+ }
+
+ a:link {
+    color: hotpink;
+ }
+
+ aside {
+    display: block;
+    overflow-y: auto;
+    flex: 1px;
+    color:grey;
+ }
