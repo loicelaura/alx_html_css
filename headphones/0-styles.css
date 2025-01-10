@@ -71,7 +71,8 @@ h1 {
 
 button {
   padding: 10px 20px;
-  background-color: red;
+  background-color: #FF6565;
+  border-radius: 20px;
   color: white;
   font-size: 1rem;
   cursor: pointer;
