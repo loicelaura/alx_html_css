@@ -176,10 +176,10 @@ button:active {
 .our-results {
     background: url("./images/headphones_hero_2.jpg") no-repeat center/cover;
     color: white;
-    padding: 1rem 0;
+    padding: 2rem 1;
     text-align: center;
     position: relative;
-    margin-top: 6rem; 
+    margin-top: 6rem;
 }
 
 .our-results::before {
@@ -198,41 +198,67 @@ button:active {
     position: relative;
     z-index: 1;
 }
-.pentagon.images {
-    display: inline-block;
+
+.pentagon-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap:20px
+}
+
+.pentagon {
+    width: 100px;
+    height: 100px;
+    background-color: #FF6565;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
     margin: 10px;
-    border: none;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .pentagon.images img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.pentagon.images img {
     width: 150px;
     height: 150px;
     object-fit: cover;
     transition: transform 0.3s, opacity 0.3s;
-  }
-  
-  .pentagon.images img:hover {
-    transform: scale(1.1); 
+}
+
+.pentagon.images img:hover {
+    transform: scale(1.1);
     opacity: 0.9;
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .our-results {
-      padding: 40px 15px;
+        padding: 40px 15px;
     }
-  
+
     .our-results h3 {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
-  
+
+    .pentagon-container {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .pentagon {
+        width: 80px;
+        height: 80px;
+    }
+
     .pentagon.images img {
-      width: 120px;
-      height: 120px;
+        width: 120px;
+        height: 120px;
     }
-  }
- 
+}
   .contact-form {
     background-color: #fff;
     padding: 1rem;
