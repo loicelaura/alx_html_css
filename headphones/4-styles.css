@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-weight: 500;
+  color: white;
+}
+
+.hero {
+  background: url("./images/headphones_hero_1.jpg") no-repeat top center/cover;
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  height: 40rem;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav img.logo {
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: #FF6565;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color:#FF6565;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover,
+button:active {
+  background-color: darkred;
+  opacity: 0.8;
+}
+
+.extra-content {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.what-we-do {
+  background-color: white;
+  color: black;
+  padding: 40px 20px;
+  text-align: center;
+  min-height: auto;
+}
+
+.what-we-do h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.what-we-do p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  min-height: auto;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon-item {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.icon-item i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #FF6565;
+}
+
+.icon-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .icon-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+
+  .what-we-do {
+    padding: 20px 10px;
+  }
+
+  .icon-section {
+    gap: 1rem;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
+.our-results {
+    background: url("./images/headphones_hero_2.jpg") no-repeat center/cover;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+    margin-top: 6rem; 
+}
+
+.our-results::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.our-results h3,
+.our-results p {
+    position: relative;
+    z-index: 1;
+}
+.pentagon.images {
+    display: inline-block;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .pentagon.images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .pentagon.images img:hover {
+    transform: scale(1.1); 
+    opacity: 0.9;
+  }
+  
+  @media (max-width: 768px) {
+    .our-results {
+      padding: 40px 15px;
+    }
+  
+    .our-results h3 {
+      font-size: 1.8rem;
+    }
+  
+    .pentagon.images img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+ 
+  .contact-form {
+    background-color: #fff;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 auto; 
+}
+
+.contact-form h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #000;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; 
+    padding: 0.1rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 2px solid #007BFF; 
+}
+
+button[type="submit"] {
+    padding: 0.75rem 1.5rem;
+    background-color: #FF6565;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; 
+}
+
+button[type="submit"]:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .contact-form h4 {
+        font-size: 2rem;
+       
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.5rem; 
+        font-size: 0.9rem; 
+    }
+
+    button[type="submit"] {
+        padding: 0.5rem 1rem; 
+    }
+}
+footer {
+    background-color: black; 
+    color: white; 
+    padding: 2rem 1rem; 
+    text-align: center; 
+}
+
+
+.footer__section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 50rem; 
+}
+
+
+footer img {
+    width: 80px; 
+    height: auto;
+}
+
+
+.footer__section i {
+    font-size: 1.5rem; 
+    color: white; 
+    margin: 0 0.5rem; 
+    cursor: pointer; 
+}
+
+
+.footer__section i:hover {
+    color: #FF6565; 
+}
+
+
+footer p {
+    margin-top: 1rem; 
+    font-size: 0.9rem; 
+}
+@media (max-width: 480px) {
+    footer {
+        padding: 1.5rem 0.5rem; 
+    }
+
+    footer p {
+        font-size: 0.8rem; 
+    }
+}
