@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200..900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  background: url("./images/headphones_hero_1.jpg") no-repeat top center/cover;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav img.logo {
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: #FF6565;
+}
+
+.content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover,
+button:active {
+  background-color: darkred; 
+  opacity: 0.8;
+}
+
+.content-text p{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .content-container {
+    padding: 10px;
+  }
+
+  body {
+    padding: 10px;
+  }
+}
