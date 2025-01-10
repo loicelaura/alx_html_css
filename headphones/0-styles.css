@@ -6,9 +6,16 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background: url("./images/headphones_hero_1.jpg") no-repeat top center/cover;
+  font-weight: 500;
   color: white;
-  font-family: 'Source Code Pro', monospace;
+  
+}
+.hero{
+  background: url("./images/headphones_hero_1.jpg") no-repeat top center/cover;
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  height: 64rem;
 }
 
 header {
@@ -77,7 +84,7 @@ button:active {
   opacity: 0.8;
 }
 
-.content-text p{
+.extra-content {
   font-size: 1rem;
   line-height: 1.6;
 }

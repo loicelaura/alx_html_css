@@ -6,9 +6,16 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  background: url("./images/headphones_hero_1.jpg") no-repeat top center/cover;
+  font-weight: 500;
   color: white;
-  font-family: 'Source Code Pro', monospace;
+}
+
+.hero {
+  background: url("./images/headphones_hero_1.jpg") no-repeat top center/cover;
+  position: relative;
+  min-height: 100vh;
+  height: fit-content;
+  height: 40rem;
 }
 
 header {
@@ -73,13 +80,66 @@ button {
 
 button:hover,
 button:active {
-  background-color: darkred; /* Change to dark red on hover */
+  background-color: darkred;
   opacity: 0.8;
 }
 
-.content-text p {
+.extra-content {
   font-size: 1rem;
   line-height: 1.6;
+}
+
+/* Styling the "What We Do" Section */
+.what-we-do {
+  background-color: white;
+  color: black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.what-we-do h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.what-we-do p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.icon-item {
+  text-align: center;
+  flex: 1 1 200px;
+}
+
+.icon-item i {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #FF6565;
+}
+
+.icon-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .icon-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-item {
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -98,15 +158,15 @@ button:active {
     padding: 10px;
   }
 
+  .what-we-do {
+    padding: 20px 10px;
+  }
+
+  .icon-section {
+    gap: 1rem;
+  }
+
   body {
     padding: 10px;
   }
-}
-
-section {
-  background-color: white;
-  padding: 40px 20px;
-  text-align: center;
-  margin-top: 20px; /* Added margin for spacing between sections */
-  margin-bottom: 20px; /* Added margin for spacing between sections */
 }
